@@ -1,0 +1,83 @@
+button {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-logo-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  width: 200px;
+  height: 50px;
+  border-width: 0px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.btn {
+  margin: 0 auto;
+}
+
+.mailing-form > button {
+  display: flex;
+  align-items: center;
+  margin-top: 47px;
+}
+
+.ft-btn-text {
+  margin-left: 28px;
+  margin-right: 10px;
+}
+
+.button__image {
+  fill: #fff;
+}
+
+.modal-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  box-shadow: none;
+  background-color: var(--primary-bg-color);
+}
+
+.modal-btn {
+  margin-left: 125px;
+}
+
+.btn-menu {
+  color: var(--primary-text-color);
+  background-color: var(--second-bg-color);
+  box-shadow: none;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  width: auto;
+  height: auto;
+  padding: 6px 22px;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-logo-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

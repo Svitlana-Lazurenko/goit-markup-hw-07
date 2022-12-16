@@ -1,0 +1,21 @@
+.container {
+  width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.container--header,
+.container--footer {
+  display: flex;
+}
+
+.container--hero {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+}
+
+.container--footer {
+  justify-content: space-between;
+}
