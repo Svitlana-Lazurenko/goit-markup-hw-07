@@ -93,12 +93,12 @@
     outline: 1px solid var(--accent-logo-color);
     border: transparent;
   }
-  &:focus + .service-form__image {
+  &:focus + .service-form__icon {
     fill: var(--accent-logo-color);
   }
 }
 
-.service-form__image {
+.service-form__icon {
   position: absolute;
   top: 50%;
   left: 12px;

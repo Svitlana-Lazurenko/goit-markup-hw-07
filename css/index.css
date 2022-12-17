@@ -68,7 +68,7 @@
   color: var(--accent-logo-color);
 }
 
-.contacts__image {
+.contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -601,11 +601,11 @@
   outline: 1px solid var(--accent-logo-color);
   border: transparent;
 }
-.service-form__input:focus + .service-form__image {
+.service-form__input:focus + .service-form__icon {
   fill: var(--accent-logo-color);
 }
 
-.service-form__image {
+.service-form__icon {
   position: absolute;
   top: 50%;
   left: 12px;

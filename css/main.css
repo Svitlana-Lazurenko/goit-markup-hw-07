@@ -10,6 +10,22 @@
   --link-color: #afb1b8;
 }
 
+.portfolio__button, .service-form__button, .mailing-form__button, .hero__button {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-logo-color);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  width: 200px;
+  height: 50px;
+  border-width: 0px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
 p,
 h1,
 h2,
@@ -113,27 +129,11 @@ ul {
   color: var(--accent-logo-color);
 }
 
-button {
-  color: var(--primary-bg-color);
-  background-color: var(--accent-logo-color);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  width: 200px;
-  height: 50px;
-  border-width: 0px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-}
-
-.btn {
+.hero__button {
   margin: 0 auto;
 }
 
-.mailing-form > button {
+.mailing-form__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,18 +141,15 @@ button {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 47px;
+  padding: 10px 28px;
 }
 
-.ft-btn-text {
-  margin-left: 28px;
-  margin-right: 10px;
-}
-
-.button__image {
+.button__icon--end {
+  margin-left: 10px;
   fill: #fff;
 }
 
-.modal-close {
+.modal__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,11 +171,11 @@ button {
   background-color: var(--primary-bg-color);
 }
 
-.modal-btn {
+.service-form__button {
   margin-left: 125px;
 }
 
-.btn-menu {
+.portfolio__button {
   color: var(--primary-text-color);
   background-color: var(--second-bg-color);
   -webkit-box-shadow: none;
@@ -199,7 +196,7 @@ button {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn-menu:hover, .btn-menu:focus {
+.portfolio__button:hover, .portfolio__button:focus {
   color: var(--primary-bg-color);
   background-color: var(--accent-logo-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -215,16 +212,15 @@ button {
   margin: 0px auto 50px;
 }
 
-.soc-list > li {
+.social-list__item {
   width: 44px;
   height: 44px;
 }
-
-.soc-list > li:not(:last-child) {
+.social-list__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.soc-list a {
+.social-link {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -237,6 +233,8 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: var(--link-color);
+  background-color: var(--primary-bg-color);
   -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
   -webkit-transition-duration: 250ms;
@@ -244,23 +242,18 @@ button {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.soc-list a:hover, .soc-list a:focus {
+.social-link:hover, .social-link:focus {
   color: var(--primary-bg-color);
   background-color: var(--accent-logo-color);
 }
 
-.soc-list svg {
-  fill: currentColor;
-}
-
-.comand-soc-link {
-  color: var(--link-color);
-  background-color: var(--primary-bg-color);
-}
-
-.ft-soc-link {
+.social-link--grey {
   color: var(--primary-bg-color);
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social__icon {
+  fill: currentColor;
 }
 
 .header {
@@ -342,7 +335,7 @@ button {
   color: var(--accent-logo-color);
 }
 
-.contacts__image {
+.contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -875,11 +868,11 @@ button {
   outline: 1px solid var(--accent-logo-color);
   border: transparent;
 }
-.service-form__input:focus + .service-form__image {
+.service-form__input:focus + .service-form__icon {
   fill: var(--accent-logo-color);
 }
 
-.service-form__image {
+.service-form__icon {
   position: absolute;
   top: 50%;
   left: 12px;
